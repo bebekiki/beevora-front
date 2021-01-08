@@ -106,9 +106,10 @@ app.controller('musicCtrl', function ($scope, $routeParams, $rootScope) {
 
 });
 
+
 //controller des albums provenant de la recherche
 app.controller('albumsArtistCtrl', function ($scope, $location, $rootScope) {
-    console.log('le res : '+ albumsArtist);
+    
     $scope.getAlbumsArtist = albumsArtist;
     // $scope.$apply();
 
