@@ -27,7 +27,6 @@ app.controller('frontCtrl', function ($scope, $location, $rootScope) {
 
     //fonction qui recherhe les albums en fonction du nom de l'artist 
     $scope.search = async function(){
-        alert('nnn');
         const result = await fetch(`https://api.spotify.com/v1/search?q=artist:`+ $scope.artist +`&type=album`, {
             method: 'GET',
             headers: { 'Authorization': 'Bearer ' + token }
@@ -40,7 +39,7 @@ app.controller('frontCtrl', function ($scope, $location, $rootScope) {
         });     
     }
 
-    $rootScope.test = "$scope.artist";
+    // $rootScope.test = "$scope.artist";
     
 });
 
